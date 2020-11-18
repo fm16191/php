@@ -11,7 +11,7 @@ function str_to_wordtab(){
 
   try{
     // echo strpos($str, $delim);
-    if (is_string($str) and is_string($delim) and strlen($str) > 0 and strlen($delim) > 0 and strpos($str, $delim)){
+    if (is_string($str) and is_string($delim) and strlen($str) > 0){ //  and strlen($delim) > 0 and strpos($str, $delim)
     // Si $str ou $delim n'est pas une string, et si la taille de $str ou $delim est nulle ou si $delim n'est pas dans $str alors return NULL
       return explode($delim, $str); // retourne une liste split par $delim
     }
